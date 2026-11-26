@@ -1,0 +1,23 @@
+# Default AudioPrune hyperparameters
+method: audioprune
+# dataset: mmau_test_mini | mmau_test | clotho | clotho_aqa | cremad | meld | librispeech
+dataset: mmau_test_mini
+# model: af3 | qwen2_audio | salmonn | kimi_audio
+model: af3
+model_id: nvidia/audio-flamingo-3-hf
+variant: k4
+
+R: 0.5
+length_lambda: 0.5
+kernel_kind: uniform
+gaussian_var: 0.5
+min_boundary_distance: 2
+mad_normalize: true
+
+# Optional; leave null to use dataset registry default root.
+data_root: null
+
+max_new_tokens: null   # null → dataset/model default
+batch_size: 1
+seed: 42
+device: cuda:0

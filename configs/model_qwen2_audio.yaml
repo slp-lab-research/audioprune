@@ -1,0 +1,11 @@
+model: qwen2_audio
+model_id: Qwen/Qwen2-Audio-7B-Instruct
+dataset: mmau_test_mini
+variant: k4
+R: 0.5
+length_lambda: 0.5
+kernel_kind: uniform
+data_root: null
+batch_size: 1
+seed: 42
+device: cuda:0

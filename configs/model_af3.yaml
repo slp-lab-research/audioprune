@@ -1,0 +1,11 @@
+model: af3
+model_id: nvidia/audio-flamingo-3-hf
+dataset: mmau_test_mini
+variant: k4
+R: 0.5
+length_lambda: 0.5
+kernel_kind: uniform
+data_root: null
+batch_size: 1
+seed: 42
+device: cuda:0
