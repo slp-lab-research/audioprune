@@ -78,3 +78,7 @@ from audioprune import audioprune_drop_ranks
 from datasets import list_datasets, resolve_dataset
 from models import list_models, build_audioprune_cmd
 ```
+
+## License
+
+This project is released under the [MIT License](LICENSE).
